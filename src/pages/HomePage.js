@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div style={style}>
+    <div style={styles}>
       <h1>This is the home page view</h1>
       <h3>Check out the homepage!</h3>
     </div>
