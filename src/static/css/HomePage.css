@@ -1,0 +1,162 @@
+body {
+  /*font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;*/
+  font-family: Arial;
+  margin: 0;
+  height: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.navbar-asset {
+  float: left;
+}
+
+.navbar-right-assets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.tinder-logo {
+  height: 50px;
+  margin: 10px 0px 10px 25px;
+}
+
+.language-picker {
+  background-color: transparent;
+  color: white;
+  display: inline-block;
+  padding: 10px 0px;
+  width: 100px;
+  margin: 15px;
+  margin-left: -10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: white;
+  color: #f43177;
+  display: inline-block;
+  padding: 10px 0px;
+  width: 100px;
+  margin: 15px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #f43177,
+    #ff7257
+  );
+  color: white;
+}
+
+#main {
+  height: 630px;
+}
+
+.background-picture-container {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  height: 630px;
+  z-index: 1;
+}
+
+.background-picture {
+  height: 630px;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.25;
+}
+
+.slogan {
+  color: white;
+  z-index: 2;
+  position: relative;
+  bottom: 360px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.create-account {
+  background-image: linear-gradient(
+    to bottom right,
+    #f43177,
+    #ff7257
+  );
+  color: white;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 330px;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  height: 60px;
+  width: 17.5%;
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+.create-account:hover {
+  background-image: linear-gradient(to top left, #f43177, #ff7257);
+}
+
+.footer {
+  background-color: white;
+  height: 150px;
+}
+
+.footer-text {
+  text-align: center;
+  color: gray;
+  width: 40%;
+  margin: 25px auto auto auto;
+}
+
+.disclaimer-buttons-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.personalize-choices-button {
+  margin: 0px 25px 15px 25px;
+  border: 5px solid gray;
+  padding: 15px;
+  border-radius: 35px;
+  text-decoration: none;
+  color: gray;
+}
+
+.accept-button {
+  margin: 0px 25px 15px 25px;
+  border: 5px solid gray;
+  padding: 15px;
+  border-radius: 35px;
+  text-decoration: none;
+  color: gray;
+}

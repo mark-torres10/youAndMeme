@@ -1,17 +1,13 @@
 import React from "react";
+import "../static/css/HomePage.css";
 
 const HomePage = () => {
   return (
-    <div style={styles}>
-      <h1>This is the home page view</h1>
-      <h3>Check out the homepage!</h3>
+    <div className="main">
+      <div>New DIV HERE</div>
+      <div>HERE's another div</div>
     </div>
   );
 };
 
-const styles = {
-  border: "5px solid orange",
-  width: "50%",
-  margin: "auto",
-};
 export default HomePage;
