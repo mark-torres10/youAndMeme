@@ -1,0 +1,335 @@
+/* Global CSS */
+.clr {
+  clear: both;
+}
+
+/* section-specific CSS*/
+
+/* main containers for page */
+.sidebar-container {
+  background-color: white;
+  float: left;
+  width: 25%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main-container {
+  background-color: #f9f9f9;
+  float: right;
+  width: 75%;
+  height: 100vh;
+  border: 1px solid rgb(189, 187, 187);
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* sidebar components */
+.sidebar-header {
+  background-image: linear-gradient(to right, #f43177, #ff7257);
+  height: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.sidebar-header-profile-pic {
+  float: left;
+  width: 20%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 70%;
+  margin: 0px 15px;
+}
+
+.sidebar-header-profile-pic-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.sidebar-header-section-name {
+  float: left;
+  width: 35%;
+  box-sizing: border-box;
+  text-align: left;
+  color: white;
+  font-size: 1.5em;
+  font-style: Arial;
+}
+
+.sidebar-header-shop-icon {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.sidebar-options-container {
+  height: 8vh;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: -0.5em;
+}
+
+.sidebar-options {
+  background-color: white;
+  margin: auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-options:hover {
+  text-decoration: none;
+  color: black;
+  border-bottom: 5px solid red;
+}
+
+.sidebar-user-cards {
+  height: 79vh;
+  box-sizing: border-box;
+}
+
+.individual-cards-list {
+  height: 78vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  box-sizing: border-box;
+  overscroll-behavior: contain;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.individual-cards-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.individual-cards-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.individual-card {
+  position: relative;
+  right: 25px;
+  border: 1px solid gray;
+  height: 15vh;
+  width: 28%;
+  margin: 10px 7px;
+  list-style-type: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.individual-card:hover {
+  transform: scale(1.1);
+}
+
+.individual-card-content {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* main container components */
+
+.main-card-container {
+  width: 36%;
+  margin: 1.75em auto 1em auto;
+  height: 73vh;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  position: relative;
+}
+
+.reaction-buttons-container {
+  width: 40%;
+  margin: 0 auto;
+  height: 10vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.keyboard-reactions-container {
+  width: 70%;
+  margin: 1em auto 0em auto;
+  height: 4.5vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-card-image {
+  border-radius: 10px;
+}
+
+.main-card-toggle {
+  position: absolute;
+  top: 0.5em;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 2em;
+}
+
+.main-card-toggle-tracker {
+  width: 25%;
+  background-color: rgb(219, 219, 219);
+  border: 1px solid rgb(199, 199, 199);
+  height: 0.75em;
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+.main-card-info {
+  position: absolute;
+  left: 1.25em;
+  bottom: 1em;
+}
+
+.name-age-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 2.25em;
+  margin-bottom: 0.85em;
+}
+
+.main-card-name {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.025em;
+  -webkit-text-stroke-color: rgb(99, 99, 99);
+}
+
+.main-card-age {
+  color: white;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  -webkit-text-stroke-width: 0.015em;
+  -webkit-text-stroke-color: rgb(99, 99, 99);
+}
+
+.affiliation-location-info {
+  height: 3.5em;
+  margin-bottom: 0.75em;
+  color: white;
+  line-height: 0.7em;
+  -webkit-text-stroke-width: 0.005em;
+  -webkit-text-stroke-color: rgb(99, 99, 99);
+}
+
+.main-card-moreInfo-icon {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  bottom: 2.5em;
+  right: 1em;
+  font-size: 1.5em;
+}
+
+.main-card-moreInfo-icon:hover {
+  transform: scale(1.25);
+}
+
+.main-card-side-arrows {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-card-arrow {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-card-arrow:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  text-decoration: none;
+  color: rgb(92, 92, 92);
+}
+
+.react-button-container {
+  background-color: white;
+  box-shadow: 2px 0px 4px;
+  width: 15%;
+  height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-button-image {
+  border-radius: 50px;
+  height: 50%;
+  width: auto;
+}
+
+.react-button-container:hover {
+  transform: scale(1.1);
+}
+
+.hide-icon {
+  background-color: rgb(221, 221, 221);
+  border-radius: 20px;
+  width: 8%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+}
+
+.hide-icon:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  text-decoration: none;
+}
+
+.key-icon {
+  color: rgb(100, 100, 100);
+  margin: 0em 1em;
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
